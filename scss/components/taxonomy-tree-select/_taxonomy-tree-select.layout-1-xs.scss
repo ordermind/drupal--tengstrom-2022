@@ -1,0 +1,16 @@
+.entity-form fieldset.taxonomy-tree-select {
+    margin: rem(10) 0;
+}
+
+form fieldset.taxonomy-tree-select .fieldset-wrapper,
+form .filters-column .taxonomy-tree-select {
+    margin-left: rem(-5);
+    margin-right: rem(-5);
+
+    .form-item {
+        display: inline-block;
+        width: 100%;
+        padding-left: rem(5);
+        padding-right: rem(5);
+    }
+}

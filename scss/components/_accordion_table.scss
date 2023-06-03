@@ -1,0 +1,14 @@
+/* Adds greater distance between the buttons in fold row to avoid accidental misclicks on mobile*/
+.tengstrom-2022 .accordion-table {
+    tbody tr {
+        &.fold {
+            .views-field-operations .dropbutton-wrapper {
+                margin: 0 rem(-15);
+
+                .dropbutton .dropbutton-action {
+                    margin: rem(5) rem(15);
+                }
+            }
+        }
+    }
+}

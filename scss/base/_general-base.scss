@@ -1,0 +1,17 @@
+@import 'general-base/general-base.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'general-base/general-base.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'general-base/general-base.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'general-base/general-base.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'general-base/general-base.layout-5-xl';
+}

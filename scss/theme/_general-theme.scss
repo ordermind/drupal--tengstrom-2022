@@ -1,0 +1,17 @@
+@import 'general-theme/general-theme.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'general-theme/general-theme.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'general-theme/general-theme.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'general-theme/general-theme.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'general-theme/general-theme.layout-5-xl';
+}

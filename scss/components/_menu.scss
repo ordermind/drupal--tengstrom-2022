@@ -1,0 +1,96 @@
+.horizontal-menu {
+    > li > a {
+        padding: 0;
+        margin: 0 rem(10);
+    }
+    .menu-item--active-trail > a {
+        text-decoration: underline;
+        color: color(dark-blue) !important;
+    }
+    .menu-item--expanded {
+        cursor: pointer;
+
+        > a, > span {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0 rem(10);
+
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                margin-left: rem(3);
+                border-style: solid;
+                border-width: rem(5) rem(4) 0 rem(4);
+                border-color: color(black) transparent transparent transparent;
+            }
+        }
+
+        > .sub-nav {
+            cursor: default;
+            right: 0;
+            left: auto;
+            background: color(white);
+            margin: 0;
+            padding: rem(10);
+            width: rem(200);
+
+            > li {
+                list-style: none;
+            }
+        }
+
+        &.sfHover {
+            > a, > span {
+                color: color(light-blue);
+
+                &:after {
+                    border-color: color(light-blue) transparent transparent transparent;
+                }
+            }
+        }
+    }
+}
+
+.responsive-menu-toggle-wrapper {
+    padding-top: rem(2);
+
+    .responsive-menu-toggle-icon {
+        height: rem(33);
+
+        &:before, &:after, span.icon {
+            background-color: color(gray-30);
+        }
+
+        span.label {
+            display: none;
+        }
+    }
+}
+
+.off-canvas-wrapper {
+    display: none;
+}
+
+.mm-menu {
+    .mm-panels {
+        font-size: rem(16);
+        font-weight: bold;
+
+        .mm-panel {
+            .mm-navbar__title {
+                color: color(gray-60);
+            }
+
+            .mm-listview .mm-listitem--selected {
+                background: var(--mm-color-background-emphasis);
+
+                a {
+                    background: transparent;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

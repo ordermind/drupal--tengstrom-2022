@@ -1,0 +1,58 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\tengstrom_2022\HookHandlers\FormAlterHandlers\GeneralFormAlterHandler;
+use Drupal\tengstrom_2022\HookHandlers\PageAttachmentsAlterHandler;
+use Drupal\tengstrom_2022\HookHandlers\PreprocessHandlers\PreprocessHtmlHandler;
+use Drupal\tengstrom_2022\HookHandlers\PreprocessHandlers\PreprocessLinksHandler;
+
+/*
+ * Drupal does not yet support services on the theme level,
+ * so we have to instantiate the hook handlers manually.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function tengstrom_2022_preprocess_html(array &$variables) {
+  $service = new PreprocessHtmlHandler();
+
+  $service->preprocess($variables);
+}
+
+/**
+ * Implements template_page_attachments_alter().
+ *
+ * Because we use a higher version of the mmenu js library than the
+ * responsive_menu module actually supports, we have to override some
+ * configuration here to be compatible with mmenu structure.
+ */
+function tengstrom_2022_page_attachments_alter(array &$page) {
+  $service = new PageAttachmentsAlterHandler(
+    \Drupal::service('module_handler'),
+    \Drupal::configFactory(),
+    \Drupal::service('language_manager')
+  );
+
+  $service->alter($page);
+}
+
+/**
+ * Implements template_form_alter().
+ */
+function tengstrom_2022_form_alter(array &$form, FormStateInterface $formState, string $formId) {
+  $service = new GeneralFormAlterHandler();
+
+  $service->alter($form, $formState, $formId);
+}
+
+/**
+ * Implements template_preprocess_links().
+ */
+function tengstrom_2022_preprocess_links(array &$variables) {
+  $service = new PreprocessLinksHandler();
+
+  $service->preprocess($variables);
+}

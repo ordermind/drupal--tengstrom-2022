@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Tengström 2022 theme.
+tengstrom_2022.settings:
+  type: theme_settings
+  label: 'Tengström 2022 settings'
+  #mapping:
+    #font_size:
+      #type: integer
+      #label: Font size

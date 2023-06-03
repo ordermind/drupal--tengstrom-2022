@@ -1,0 +1,29 @@
+$colors: (
+    white: #ffffff,
+    black: #000000,
+    gray-30: #434343,
+    gray-40: #595959,
+    gray-60: #a6a6a6,
+    gray-70: #b7b7b7,
+    gray-80: #d4d4d4,
+    gray-90: #ededed,
+    gray-95: #f8f8f8,
+    light-blue-gray: #327ebd,
+    dark-blue-gray: #353641,
+    orange: #e0ac00,
+    light-orange: #ffd23f,
+    teal: #42a877,
+    red: #c72100,
+    light-red: #e34f4f,
+    orange-red: #d96953,
+    light-blue: #7eb1d1,
+    dark-blue: #0074bd,
+
+    // Theme-specific colors to be overridden
+    theme-primary-bg: #ffffff,
+    theme-secondary-bg: #434343
+);
+
+@function color($name) {
+    @return map-get($colors, $name);
+}

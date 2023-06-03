@@ -1,0 +1,102 @@
+.tengstrom-2022 table.zebra {
+    thead tr th {
+        background-color: color(gray-70);
+        color: color(white);
+    }
+    tbody tr {
+        &:nth-child(odd), &:nth-child(odd):hover, &:nth-child(odd):focus {
+            background: color(white);
+        }
+        &:nth-child(even), &:nth-child(even):hover, &:nth-child(even):focus {
+            background: color(gray-95);
+        }
+
+        &.odd, &.odd:hover, &.odd:focus {
+            background: color(white);
+        }
+        &.even, &.even:hover, &.even:focus {
+            background: color(gray-95);
+        }
+    }
+}
+
+.tengstrom-2022 .tabledrag-toggle-weight-wrapper {
+    display: none;
+}
+
+.tengstrom-2022 .dropbutton-wrapper .dropbutton .dropbutton-action {
+    &:hover,
+    &:focus,
+    &:hover a,
+    &:focus a,
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+}
+
+.tengstrom-2022 .separate-operations-buttons {
+    .dropbutton-wrapper {
+        padding: 0;
+        margin: 0 rem(-5);
+        line-height: 1;
+
+        .dropbutton-widget {
+            position: relative;
+        }
+
+        .dropbutton {
+            li {
+                display: inline-block;
+                padding: rem(2);
+                border: 0;
+            }
+
+            .dropbutton-action {
+                border: 0;
+                margin: rem(5);
+
+                a {
+                    background: color(gray-95);
+                    border: rem(1) solid color(gray-60);
+
+                    &:hover {
+                        background: color(white);
+                    }
+                }
+
+                &.button--danger, &.cancel {
+                    a {
+                        background-color: color(white);
+                        border: rem(1) solid color(red);
+                        color: color(red);
+                    }
+
+                    &:hover a, &:focus a, a:hover, a:focus {
+                        background-color: color(orange-red);
+                        border: rem(1) solid color(orange-red);
+                        text-decoration: none;
+                        color: color(white);
+                    }
+                }
+            }
+        }
+
+        &.dropbutton-multiple {
+            .dropbutton-widget {
+                padding: 0;
+                border: 0;
+                background: 0;
+            }
+
+            .dropbutton .dropbutton-toggle {
+                display: none;
+            }
+        }
+    }
+}
+
+.tengstrom-2022 .taxonomy-overview-terms table tbody tr.taxonomy-term-preview {
+    background-image: linear-gradient(90deg, color(white) 25%, color(gray-95) 25%, color(gray-95) 50%, color(white)50%, color(white) 75%, color(gray-95) 75%, color(gray-95) 100%);
+    background-size: rem(40) rem(40);
+}

@@ -1,0 +1,10 @@
+{
+    "name": "drupal/tengstrom_2022",
+    "type": "drupal-theme",
+    "require": {
+        "drupal/core": "^9.4",
+        "drupal/tengstrom_general": "dev-master",
+        "drupal/adminimal_theme": "^1.6"
+    }
+}
+

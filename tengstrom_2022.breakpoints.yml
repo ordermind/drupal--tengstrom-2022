@@ -1,0 +1,30 @@
+tengstrom_2022.extra_small:
+  label: Extra small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+tengstrom_2022.small:
+  label: Small
+  mediaQuery: 'all and (min-width: 30em)' # 480px
+  weight: 1
+  multipliers:
+    - 1x
+tengstrom_2022.medium:
+  label: Medium
+  mediaQuery: 'all and (min-width: 48em)' # 768px
+  weight: 2
+  multipliers:
+    - 1x
+tengstrom_2022.large:
+  label: Large
+  mediaQuery: 'all and (min-width: 62em)' # 992px
+  weight: 3
+  multipliers:
+    - 1x
+tengstrom_2022.extra_large:
+  label: Extra Large
+  mediaQuery: 'all and (min-width: 75em)' # 1200px
+  weight: 4
+  multipliers:
+    - 1x

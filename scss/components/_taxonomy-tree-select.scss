@@ -1,0 +1,17 @@
+@import 'taxonomy-tree-select/taxonomy-tree-select.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'taxonomy-tree-select/taxonomy-tree-select.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'taxonomy-tree-select/taxonomy-tree-select.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'taxonomy-tree-select/taxonomy-tree-select.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'taxonomy-tree-select/taxonomy-tree-select.layout-5-xl';
+}

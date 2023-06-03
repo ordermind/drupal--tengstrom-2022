@@ -1,0 +1,7 @@
+# Main theme library.
+global:
+  js:
+    js/tengstrom-2022.js: {}
+  css:
+    theme:
+      scss/main.scss: {}

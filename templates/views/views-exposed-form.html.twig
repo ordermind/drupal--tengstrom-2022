@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override for a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ * - is_submitted: True if the form has been submitted, otherwise false.
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+{{ q }}
+{% endif %}
+<details class="filters-wrapper" {% if is_submitted %} open {% endif %}>
+  <summary><span>{{ 'Click here to display search options' | t }}</span></summary>
+  <div class="details-wrapper form--inline clearfix">
+    {{ form }}
+  </div>
+</details>

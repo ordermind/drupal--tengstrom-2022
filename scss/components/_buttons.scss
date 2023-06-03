@@ -1,0 +1,32 @@
+.tengstrom-2022 .button {
+    padding: rem(4) rem(21) rem(6) rem(21);
+
+    &:hover, &:focus {
+        padding: rem(4) rem(21) rem(6) rem(21);
+    }
+
+    &.button--primary {
+        &:disabled {
+            font-weight: 700;
+
+            &:hover, &:focus {
+                background-color: color(gray-90);
+                border-color: color(gray-80);
+            }
+        }
+    }
+
+    &.button--danger, &.cancel {
+        background-color: color(red);
+        border: rem(1) solid color(red);
+        color: color(white);
+        font-weight: bold;
+
+        &:hover, &:focus {
+            background-color: color(orange-red);
+            border: rem(1) solid color(orange-red);
+            text-decoration: none;
+            color: color(white);
+        }
+    }
+}

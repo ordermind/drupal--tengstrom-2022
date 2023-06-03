@@ -1,0 +1,31 @@
+.block-system-main-block {
+    margin-top: rem(32);
+}
+
+.tengstrom-2022 .content-primary_menu {
+    background-color: color(theme-primary-bg);
+
+    .region-primary-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        height: rem(48);
+    }
+}
+
+
+.tengstrom-2022 .content-header {
+    background-color: color(theme-secondary-bg);
+    padding-top: rem(16);
+}
+
+.tengstrom-2022 .content-footer {
+    padding: rem(20) 0;
+
+    .region-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

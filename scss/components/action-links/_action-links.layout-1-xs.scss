@@ -1,0 +1,102 @@
+.tengstrom-2022 .action-links {
+    > li {
+        vertical-align: top;
+        width: 100%;
+        margin-top: rem(4);
+        margin-bottom: rem(4);
+
+        &:first-of-type {
+            margin-left: rem(4);
+        }
+
+        > a {
+            width: 100%;
+            text-align: left
+        }
+
+        > .button {
+            &:focus, &:hover {
+                padding: 0.4rem 1.33rem;
+            }
+        }
+
+        details.button-action {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            transition: none;
+            cursor: default;
+            text-align: left;
+
+            &[open] {
+                background: color(light-blue-gray);
+                border-radius: rem(16);
+            }
+
+            > summary {
+                padding: 0.4rem 1.33rem;
+            }
+
+            > summary,
+            > summary *,
+            > summary:focus,
+            > summary:focus * {
+                text-transform: none;
+                text-decoration: none;
+                text-shadow: none;
+                color: color(light-blue-gray);
+            }
+
+            &:hover, &:focus, &[open] {
+                color: color(white);
+                text-shadow: none;
+                text-decoration: none;
+                padding: 0;
+                > summary,
+                > summary * {
+                    color: color(white);
+                }
+            }
+
+            > .details-wrapper {
+                * {
+                    color: color(white);
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0 0 0 rem(14);
+
+                    li {
+                        display: list-item;
+                        margin: rem(16) 0 0;
+                    }
+                }
+            }
+        }
+
+        .actionlink-dropdown-select-container {
+            margin: 0;
+            
+            > select.button-action {
+                text-align: left;
+                padding: 0.4rem 1.33rem 0.4rem 2.23rem;
+                background-image: url(images/action-button-select-caret.blue.right.svg);
+                background-repeat: no-repeat;
+                background-position: 1.33rem 85%;
+                &:hover {
+                    background-image: url(images/action-button-select-caret.white.right.svg);
+                }
+                &:focus {
+                    background-image: url(images/action-button-select-caret.white.down.svg);
+                }
+            }
+        } 
+
+        .actionlink-dropdown-details-select-container {
+            details.button-action {
+                display: none;
+            }
+        }
+    }
+}

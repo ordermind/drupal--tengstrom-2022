@@ -1,0 +1,17 @@
+@import 'action-links/action-links.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'action-links/action-links.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'action-links/action-links.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'action-links/action-links.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'action-links/action-links.layout-5-xl';
+}

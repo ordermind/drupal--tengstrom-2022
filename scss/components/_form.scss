@@ -1,0 +1,17 @@
+@import 'form/form.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'form/form.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'form/form.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'form/form.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'form/form.layout-5-xl';
+}

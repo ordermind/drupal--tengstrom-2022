@@ -1,0 +1,11 @@
+.tengstrom-2022 .tengstrom-form {
+    &.list-filters {
+        > .filters-wrapper {
+            > .details-wrapper {
+                .column-wrapper .column-wrapper .col-1_2 {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

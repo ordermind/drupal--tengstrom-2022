@@ -1,0 +1,31 @@
+.tengstrom-2022 .messages {
+    box-sizing: border-box;
+    margin-top: rem(16);
+    margin-bottom: rem(16);
+    padding: rem(24) rem(24) rem(24) rem(40);
+    color: color(white);
+    border-width: 0 0 0 rem(5);
+    border-style: solid;
+    border-color: color(dark-blue-gray);
+    border-radius: rem(2);
+    background-color: color(dark-blue-gray);
+    background-position: rem(10) 50%;
+
+    &.messages--error {
+        border-color: color(light-red);
+    }
+    &.messages--status {
+        border-color: color(teal);
+    }
+    &.messages--warning {
+        border-color: color(orange);
+    }
+
+    a {
+        text-decoration: underline;
+        color: color(light-orange);
+        &:hover {
+            color: color(white);
+        }
+    }
+}

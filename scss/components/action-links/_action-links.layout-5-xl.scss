@@ -1,0 +1,12 @@
+.tengstrom-2022 .action-links {
+    > li {
+        .actionlink-dropdown-details-select-container {
+            details.button-action {
+                display: block;
+            }
+            .actionlink-dropdown-select-container {
+                display: none;
+            }
+        }
+    }
+}
