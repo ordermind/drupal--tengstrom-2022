@@ -1,0 +1,29 @@
+.tengstrom-configuration-form {
+    margin: 0 rem(-16);
+
+    > * {
+        display: inline-block;
+        vertical-align: top;
+        padding: rem(16);
+    }
+
+    .form-type-managed-file {
+        background: #e5e5e5;
+        padding: rem(10);
+        border: rem(1) outset color(white);
+        border-radius: rem(10);
+
+        > label {
+            margin-bottom: rem(10);
+        }
+
+        .image-preview {
+            margin-bottom: rem(10);
+        }
+    }
+
+    > .form-actions {
+        display: block;
+        padding: 0 rem(16);
+    }
+}
