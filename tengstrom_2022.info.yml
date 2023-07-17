@@ -22,5 +22,4 @@ regions_hidden:
   - sidebar_first
 
 dependencies:
-  - tengstrom_general:tengstrom_general
   - adminimal_admin_toolbar:adminimal_admin_toolbar
