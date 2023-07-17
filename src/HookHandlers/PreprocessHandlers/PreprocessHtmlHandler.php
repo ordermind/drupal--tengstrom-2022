@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Drupal\tengstrom_2022\HookHandlers\PreprocessHandlers;
 
 use Drupal\Core\Template\Attribute;
-use Drupal\tengstrom_general\HookHandlers\PreprocessHandlers\PreprocessHandlerInterface;
+use Ordermind\DrupalTengstromShared\HookHandlers\PreprocessHandlerInterface;
 
 /**
  * Hook handler for template_preprocess_html().

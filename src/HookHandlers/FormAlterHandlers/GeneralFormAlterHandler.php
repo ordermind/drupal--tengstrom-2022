@@ -7,8 +7,8 @@ namespace Drupal\tengstrom_2022\HookHandlers\FormAlterHandlers;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 use Drupal\Core\Form\FormInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\tengstrom_general\Helpers\EntityFormHelpers;
-use Drupal\tengstrom_general\HookHandlers\FormAlterHandlers\FormAlterHandlerInterface;
+use Ordermind\DrupalTengstromShared\Helpers\EntityFormHelpers;
+use Ordermind\DrupalTengstromShared\HookHandlers\FormAlterHandlerInterface;
 
 /**
  * Hook handler for template_form_alter().
