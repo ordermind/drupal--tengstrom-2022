@@ -4,12 +4,15 @@
     > * {
         display: inline-block;
         vertical-align: top;
-        padding: rem(16);
+        padding: rem(8) rem(16);
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .form-type-managed-file {
         background: #e5e5e5;
         padding: rem(10);
+        margin: 0;
         border: rem(1) outset color(white);
         border-radius: rem(10);
 
@@ -19,6 +22,14 @@
 
         .image-preview {
             margin-bottom: rem(10);
+        }
+
+        .image-widget-data {
+            float: none;
+        }
+
+        .form-submit {
+            float: right;
         }
     }
 

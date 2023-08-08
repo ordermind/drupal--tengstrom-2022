@@ -1,0 +1,17 @@
+@import 'tengstrom-configuration-form/tengstrom-configuration-form.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'tengstrom-configuration-form/tengstrom-configuration-form.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'tengstrom-configuration-form/tengstrom-configuration-form.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'tengstrom-configuration-form/tengstrom-configuration-form.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'tengstrom-configuration-form/tengstrom-configuration-form.layout-5-xl';
+}
