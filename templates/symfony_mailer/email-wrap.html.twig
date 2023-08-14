@@ -107,7 +107,7 @@
     }
 
     .footer {
-      background-color: #900055;
+      background-color: #d96953;
       padding: 20px;
     }
     .footer .footer-content, .footer .footer-content * {
@@ -137,7 +137,7 @@
     ------------------------------------- */
     @media only screen and (max-width: 620px) {
       table.body h1 {
-        font-size: 28px !important;
+        font-size: 20px !important;
         margin-bottom: 10px !important;
       }
       table.body .wrapper,
@@ -165,7 +165,6 @@
       table.body .img-responsive {
         height: auto !important;
         max-width: 100% !important;
-        width: auto !important;
       }
       .header {
         padding: 10px;
@@ -191,7 +190,7 @@
               <td class="header">
                 {% set emailLogoWidth = logo.width / 2 %}
                 {% set emailLogoHeight = logo.height / 2 %}
-                <img src="{{ logo.url }}" width="{{ emailLogoWidth }}" height="{{ emailLogoHeight }}" alt=""/>
+                <img class="img-responsive" src="{{ logo.url }}" width="{{ emailLogoWidth }}" height="{{ emailLogoHeight }}" alt=""/>
               </td>
             </tr>
           {% endif %}
@@ -234,7 +233,6 @@
         <!-- END CENTERED WHITE CONTAINER -->
       </div>
     </td>
-    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
   </tr>
 </table>
 </body>
