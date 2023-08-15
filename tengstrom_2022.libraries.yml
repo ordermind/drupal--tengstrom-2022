@@ -5,3 +5,8 @@ global:
   css:
     theme:
       scss/main.scss: {}
+
+emails:
+  css:
+    theme:
+      scss/emails.scss: {}

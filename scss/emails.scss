@@ -1,0 +1,21 @@
+@import 'helpers/vars';
+@import 'helpers/colors';
+@import 'helpers/tools';
+
+@import 'emails/emails.layout-1-xs';
+
+@media #{$breakpointSmall} {
+    @import 'emails/emails.layout-2-s';
+}
+
+@media #{$breakpointMedium} {
+    @import 'emails/emails.layout-3-m';
+}
+
+@media #{$breakpointLarge} {
+    @import 'emails/emails.layout-4-l';
+}
+
+@media #{$breakpointXLarge} {
+    @import 'emails/emails.layout-5-xl';
+}
