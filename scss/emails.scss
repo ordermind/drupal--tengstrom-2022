@@ -2,20 +2,130 @@
 @import 'helpers/colors';
 @import 'helpers/tools';
 
-@import 'emails/emails.layout-1-xs';
+/** General elements */
 
-@media #{$breakpointSmall} {
-    @import 'emails/emails.layout-2-s';
+p, h1 {
+  line-height: 150%;
 }
 
-@media #{$breakpointMedium} {
-    @import 'emails/emails.layout-3-m';
+.button {
+  display: inline-block;
+  padding: rem(15);
+  font-size: rem(16);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: color(light-blue-gray);
+  color: color(white);
+  border-radius: rem(10);
+  width: rem(200);
+  min-width: rem(200);
+  text-align: center;
 }
 
-@media #{$breakpointLarge} {
-    @import 'emails/emails.layout-4-l';
+.text-align-left {
+  text-align: left;
 }
 
-@media #{$breakpointXLarge} {
-    @import 'emails/emails.layout-5-xl';
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+h1 {
+  font-size: rem(28);
+  margin: 0;
+}
+
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+/** Containers */
+
+body {
+  background-color: color(gray-95);
+  -webkit-font-smoothing: antialiased; 
+  margin: 0; 
+  padding: 0; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+  color: color(gray-40);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: rem(14);
+  text-align: left;
+  line-height: 1.4;
+
+  table.body {
+    border-collapse: separate; 
+    mso-table-lspace: 0pt; 
+    mso-table-rspace: 0pt; 
+    width: 100%; 
+    background-color: color(gray-95);
+
+    .email-area {
+      display: block; 
+      margin: rem(20) auto;
+      max-width: rem(580);
+
+      .preheader {
+        color: transparent; 
+        display: none; 
+        height: 0; 
+        max-height: 0; 
+        max-width: 0; 
+        opacity: 0; 
+        overflow: hidden; 
+        mso-hide: all; 
+        visibility: hidden; 
+        width: 0;
+      }
+
+      .wrapper {
+        border-collapse: separate;
+        border-left-width: 0;
+        border-radius: rem(3);
+        border-right-width: 0;
+        mso-table-lspace: 0pt; 
+        mso-table-rspace: 0pt; 
+        background: color(white);
+
+        .header {
+          padding: rem(20);
+          text-align: center;
+        }
+
+        .content {
+          padding: rem(20);
+          margin: 0;
+          .content-wrapper {
+            font-size: rem(14); 
+          }
+        }
+
+        .footer {
+          background-color: color(theme-primary-bg);
+          padding: rem(20);
+
+          .footer-content,
+          .footer-content * {
+            color: rgb(255,255,255);
+            font-size: rem(12);
+            font-weight: bold;
+            line-height: rem(18);
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 }
