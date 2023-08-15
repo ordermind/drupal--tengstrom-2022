@@ -6,6 +6,7 @@ global:
     theme:
       scss/main.scss: {}
 
+# Email theme library.
 emails:
   css:
     theme:
