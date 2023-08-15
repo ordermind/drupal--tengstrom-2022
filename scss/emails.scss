@@ -15,8 +15,8 @@ p, h1 {
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
-  background-color: color(light-blue-gray);
-  color: color(white);
+  background-color: raw-color(light-blue-gray);
+  color: raw-color(white);
   border-radius: rem(10);
   width: rem(200);
   min-width: rem(200);
@@ -52,13 +52,13 @@ h1 {
 /** Containers */
 
 body {
-  background-color: color(gray-95);
+  background-color: raw-color(gray-95);
   -webkit-font-smoothing: antialiased; 
   margin: 0; 
   padding: 0; 
   -ms-text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%;
-  color: color(gray-40);
+  color: raw-color(gray-40);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: rem(14);
   text-align: left;
@@ -69,13 +69,13 @@ body {
     mso-table-lspace: 0pt; 
     mso-table-rspace: 0pt; 
     width: 100%; 
-    background-color: color(gray-95);
+    background-color: raw-color(gray-95);
 
     .email-area {
       display: block; 
       margin: rem(20) auto;
       width: rem(580);
-      background-color: color(white);
+      background-color: raw-color(white);
       border-radius: rem(3);
 
       .preheader {
@@ -113,12 +113,12 @@ body {
         }
 
         .footer {
-          background-color: color(theme-primary-bg);
+          background-color: raw-color(primary-bg);
           padding: rem(20);
 
           .footer-content,
           .footer-content * {
-            color: color(white);
+            color: raw-color(white);
             font-size: rem(12);
             font-weight: bold;
             line-height: rem(18);

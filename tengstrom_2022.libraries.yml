@@ -6,7 +6,7 @@ global:
     theme:
       scss/main.scss: {}
 
-# Email theme library.
+# Email theme library, required by tengstrom_emails module.
 emails:
   css:
     theme:

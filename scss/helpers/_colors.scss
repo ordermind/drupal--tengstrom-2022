@@ -20,10 +20,15 @@ $colors: (
     dark-blue: #0074bd,
 
     // Theme-specific colors to be overridden
-    theme-primary-bg: #d96953,
-    theme-secondary-bg: #434343
+    primary-bg: #42a877,
+    secondary-bg: #434343
 );
 
-@function color($name) {
+/**
+ * Mainly used in e-mails since many e-mail clients do not support css variables.
+ * This has the drawback that it is not automatically overridden in the
+ * child theme.
+ */
+@function raw-color($name) {
     @return map-get($colors, $name);
 }

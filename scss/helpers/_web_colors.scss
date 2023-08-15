@@ -1,0 +1,15 @@
+/**
+ * Create a css variable for each defined color.
+ */
+:root {
+    @each $name, $value in $colors {
+        --color-#{$name}: #{$value};
+    }
+}
+
+/**
+ * Returns a css variable for the color, used everywhere except in emails.
+ */
+@function color($name) {
+    @return var(--color-#{$name});
+}
