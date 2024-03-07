@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\tengstrom_2022\HookHandlers\FormAlterHandlers\GeneralFormAlterHandler;
+use Drupal\tengstrom_2022\HookHandlers\LibraryInfoAlterHandler;
 use Drupal\tengstrom_2022\HookHandlers\PageAttachmentsAlterHandler;
 use Drupal\tengstrom_2022\HookHandlers\PreprocessHandlers\PreprocessHtmlHandler;
 use Drupal\tengstrom_2022\HookHandlers\PreprocessHandlers\PreprocessLinksHandler;
@@ -55,4 +56,13 @@ function tengstrom_2022_preprocess_links(array &$variables) {
   $service = new PreprocessLinksHandler();
 
   $service->preprocess($variables);
+}
+
+/**
+ * Implements template_library_info_alter().
+ */
+function tengstrom_2022_library_info_alter(array &$libraries, string $extension) {
+  $service = new LibraryInfoAlterHandler();
+
+  $service->alter($libraries, $extension);
 }

@@ -6,12 +6,12 @@ global:
     theme:
       scss/main.scss: {}
 
-# Toolbar workaround
+# Toolbar workaround. The reason why we do not have a dependency on the toolbar/toolbar library is that we do it the other
+# way around and add a dependency on this library in tengstrom_2022_library_info_alter(). Having a mutual dependency on one another
+# creates an infinite loop.
 toolbar_workaround:
   js:
     js/toolbar-workaround.js: {}
-  dependencies:
-    - toolbar/toolbar
 
 
 # Email theme library, required by tengstrom_emails module.

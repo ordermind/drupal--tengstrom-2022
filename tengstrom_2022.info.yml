@@ -6,7 +6,6 @@ package: Tengström
 core_version_requirement: ^9 || ^10
 libraries:
   - tengstrom_2022/global
-  - tengstrom_2022/toolbar_workaround
 regions:
   primary_menu: 'Primary Menu'
   header: 'Header'
