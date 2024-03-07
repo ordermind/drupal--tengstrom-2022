@@ -6,6 +6,14 @@ global:
     theme:
       scss/main.scss: {}
 
+# Toolbar workaround
+toolbar_workaround:
+  js:
+    js/toolbar-workaround.js: {}
+  dependencies:
+    - toolbar/toolbar
+
+
 # Email theme library, required by tengstrom_emails module.
 emails:
   css:
