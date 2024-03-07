@@ -7,7 +7,7 @@
 
       // Workaround for bug with toolbar module that does not set header padding-top properly on page load which makes
       // the toolbar cover part of the header
-      if(typeof Drupal.toolbar.models.toolbarModel === 'object' && Drupal.toolbar.models.toolbarModel !== null) {
+      if(Drupal.toolbar !== undefined && typeof Drupal.toolbar.models.toolbarModel === 'object' && Drupal.toolbar.models.toolbarModel !== null) {
         $(window).on('load', () => {
           const currentOrientation = Drupal.toolbar.models.toolbarModel.get('orientation');
           Drupal.toolbar.models.toolbarModel.trigger('change:orientation', Drupal.toolbar.models.toolbarModel, currentOrientation);
