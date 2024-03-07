@@ -13,7 +13,10 @@ use Ordermind\DrupalTengstromShared\HookHandlers\PreprocessHandlerInterface;
 class PreprocessHtmlHandler implements PreprocessHandlerInterface {
 
   public function preprocess(array &$variables): void {
-    // Add class to the body element.
+    $this->addThemeNameClassToBodyElement($variables);
+  }
+
+  protected function addThemeNameClassToBodyElement(array &$variables): void {
     if ($variables['attributes'] instanceof Attribute) {
       $variables['attributes']->addClass('tengstrom-2022');
     }
