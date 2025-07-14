@@ -6,14 +6,19 @@
             "type": "vcs",
             "url": "git@github.com:ordermind/drupal--tengstrom-shared.git",
             "no-api": true
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/adminimal_theme-3460890.git",
+            "no-api": true
         }
     ],
     "require": {
         "drupal/core": "^10 || ^11",
         "ordermind/drupal--tengstrom-shared": "dev-master",
         "drupal/admin_toolbar": "^3.1",
-        "drupal/adminimal_admin_toolbar": "1.x-dev",
-        "drupal/adminimal_theme": "^1.7"
+        "drupal/adminimal_admin_toolbar": "2.x-dev",
+        "drupal/adminimal_theme": "dev-3460890-drupal-11-compatability#167c4a54bc"
     }
 }
 
