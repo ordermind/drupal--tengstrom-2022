@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "drupal/core": "^9.4 || ^10",
+        "drupal/core": "^10 || ^11",
         "ordermind/drupal--tengstrom-shared": "dev-master",
         "drupal/admin_toolbar": "^3.1",
         "drupal/adminimal_admin_toolbar": "1.x-dev",
