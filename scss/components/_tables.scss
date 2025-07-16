@@ -1,3 +1,11 @@
+/* Override Seven css */
+@media screen and (max-width: 60em) {
+  table {
+    display: table;
+  }
+}
+/* End override Seven css */
+
 .tengstrom-2022 table.zebra {
     thead tr th {
         background-color: color(gray-70);

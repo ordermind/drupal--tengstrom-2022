@@ -45,6 +45,7 @@
                 text-decoration: none;
                 text-shadow: none;
                 color: color(light-blue-gray);
+                background: transparent;
             }
 
             &:hover, &:focus, &[open] {
@@ -83,7 +84,7 @@
                 padding: 0.4rem 1.33rem 0.4rem 2.23rem;
                 background-image: url(images/action-button-select-caret.blue.right.svg);
                 background-repeat: no-repeat;
-                background-position: 1.33rem 85%;
+                background-position: 1.33rem 75%;
                 &:hover {
                     background-image: url(images/action-button-select-caret.white.right.svg);
                 }
