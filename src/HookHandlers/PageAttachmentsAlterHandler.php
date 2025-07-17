@@ -19,7 +19,7 @@ class PageAttachmentsAlterHandler {
   public function __construct(
     ModuleHandlerInterface $moduleHandler,
     ConfigFactoryInterface $configFactory,
-    LanguageManagerInterface $languageManager
+    LanguageManagerInterface $languageManager,
   ) {
     $this->moduleHandler = $moduleHandler;
     $this->configFactory = $configFactory;
