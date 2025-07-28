@@ -53,6 +53,7 @@
                 text-shadow: none;
                 text-decoration: none;
                 padding: 0;
+                border: 2px solid #327ebd;
                 > summary,
                 > summary * {
                     color: color(white);
@@ -78,7 +79,7 @@
 
         .actionlink-dropdown-select-container {
             margin: 0;
-            
+
             > select.button-action {
                 text-align: left;
                 padding: 0.4rem 1.33rem 0.4rem 2.23rem;
@@ -92,7 +93,7 @@
                     background-image: url(images/action-button-select-caret.white.down.svg);
                 }
             }
-        } 
+        }
 
         .actionlink-dropdown-details-select-container {
             details.button-action {
